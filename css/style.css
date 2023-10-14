@@ -695,6 +695,56 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
+  .product-stars,
+  .product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-stars {
+    margin-bottom: 10px; /* Untuk memberi ruang di bawah elemen bintang */
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content img {
+    height: 10rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: 3px solid #666;
+    border-radius: 7%;
+    align-self: center;
+  }
+
+  .modal .star-full {
+    color: gold; 
+    margin-right: 5px; 
+    margin-top: 2rem;
+  }
+
+  .modal .star-full {
+    fill: gold;
+  }
+
+  .product-price span {
+    margin-left: 5px; 
+    text-decoration: line-through;
+    font-size: 0.8rem;
+  }
+
+  .add-to-cart {
+    margin: 0 auto;
+  }
+
+  
+
+
 }
 
 /* mobile */
