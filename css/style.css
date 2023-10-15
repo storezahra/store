@@ -606,7 +606,7 @@ footer .credit a {
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 70%;
+    font-size: 65%;
   }
 
   #hamburger-menu {
@@ -773,5 +773,9 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .hero .content p {
+    font-size: 2.2rem;
   }
 }
