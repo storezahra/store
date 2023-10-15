@@ -185,11 +185,27 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url('../img/market.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
+  z-index: -1;
+  opacity: 0.6; /* Sesuaikan nilai opacity sesuai keinginan Anda */
+}
+
+.hero .content {
+  z-index: 1;
+  /* Tambahkan gaya lain untuk konten di dalam .hero jika diperlukan */
 }
 
 .hero::after {
@@ -269,8 +285,9 @@ body {
 
 .about .row .about-img img {
   width: 80%;
-  padding-left: 2rem;
   /* height: 250px; */
+  opacity: 0.7;
+  border-radius: 3%;
 }
 
 .about .row .content {
@@ -418,6 +435,12 @@ body {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
+}
+
+.contact .row form {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact .row form .input-group {
@@ -651,7 +674,6 @@ footer .credit a {
     height: 80%;
     object-fit: cover;
     object-position: center;
-    padding-right: 2rem;
   }
 
   .about .row .content {
